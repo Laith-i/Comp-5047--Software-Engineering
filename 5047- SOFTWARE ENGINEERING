@@ -1,1 +1,161 @@
       5047 CourseWork
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+(b) CloudTables-Service: a web interface for running on desktop or tablet computer for restaurant service staffs to help them providing services to the restaurant customers. 
+
+Task 2:
+·  	Security and Privacy:
+ 
+-   	Data Encryption:  All communication between the CloudTables – Service subsystem, as well as the cloud server will be encrypted. Which is essential within such a system dealing with such personal customer information, such as booking details for tables, food orders, and dynamic environments where multiple restaurants and users are being involved, e.g. phone numbers, names, allergies, timings, card details. The way in which this will be secured by making use of SSL/TLS encryption assures all data transferred between the service staff’s devices (tablets or desktop interfaces) as well as cloud servers is secured from any potential interception or potential tampering that may have taken place. Especially due to service staff dealing with data, (e.g., customer names, booking times, allergens, birthdates).
+ 
+-   	Why SSL/TLS: SSL/TLS is commonly used amongst many networks, and ensures the security of communication through networks, this is highly essential within a multi-tenant environment described in the case study. The system must protect data as data moves across networks, via many different restaurants and users, whilst also assuring the privacy regulations are being applied, especially if customer data is shared across different countries, or even globally, where GDPR or CCPA requirements may come into play.
+ 
+-   	Authentication and Authorisation: OAuth2 will be implemented to handle user authentication for service staff (waiters, foodrunners, barstaff, etc). OAuth2 is chosen as it is a highly secure and widely used standard that can handle the access of data amongst several users at once, by depending on the user’s roles. For example, service staff will have the ability to access bookings, and to see table numbers as well as tables available, as well as the ability to place orders. However, a manager would have access to sales, table layouts, and void functions, which would be only accessible for managers.
+ 
+-   	Why OAuth2? OAuth2 has high levels of security, as well as at the same time supporting multi-device access, as required of service staff making use of any tablets/desktops. This system is fundamentally cloud based, and serves several restaurants (multi- tenancy), therefore having a secure/scalable authentication system is essential. Especially with CloudTables, OAuth2 makes use of easy token-based authentication, preventing session hijacking or any attacks in cloud environments.
+
+
+Data Privacy: As the system deals with bookings from customers, as well as personal details. Role-Based Access Control (RBAC) is essential. This allows service staff to have access that is only needed for them to take out their job role correctly, e.g booking name, table number, amount of people. Service staff ‘s data is logged, which enables management to check on who, and when staff had access to customer related data, therefore preventing unauthorised access.
+
+Why RBAC? : This is a cloud based system serving several restaurants, which assists restaurant management in assigning access to staff based on their given roles, whilst also simultaneously maintaining a high level of efficiency. 
+
+
+
+
+
+
+2. Performance: 
+
+ Real-Time Data Handling: The system will use WebSockets, this assures that table availability across restaurants are pushed and updated based on real time changes, with minimal delay of a few seconds. This will prevent staff from making double reservations, which will cause the restaurant to change the booking for the customer, and ensure waiting staff have access to accurate real time information. This technology is fundamental for the functionality of the system as the dynamic update of information  is highlighted in the case study.
+
+Response Time:  The system runs on a 2-3 second response time for retrieving booking information and updating table occupancy. This is ensured by making use of data caching  for frequently accessed information (such as table availability). By making use of this system, it optimises the  efficiency of restaurant operations during peak service hours, as this reduces the need for repeated database queries, such as lunch/dinner times, where quick access is essential for restaurants. 
+
+Load Handling: The cloud-based architecture allows for dynamic scaling during peak times, using load balancing in order to distribute incoming traffic across multiple servers. Autoscaling will instantly assign more resources as traffic increases , ensuring user performance is as functional as possible during peak times, such during holidays, weekends, bank holidays. Which is also highlighted in the case study where scalability is essential across multiple restaurants.
+
+3. Reliability:
+
+Fault Tolerance: The system will make use of a highly reliable failover mechanism  in order to assure that if a server becomes unavailable, an alternative server will instantaneously take over. This guarantees that service staff can continue to fulfil their roles adequately regardless of any interruption. Real-time updates between devices, in order to ensure that customer service is not affected due to technical issues, which correlates directly with what's mentioned in the case study regarding reliability concerns.
+
+Error Handling: The system handles errors in a way in which providing staff clear and concise feedback based on user input (e.g., “Booking time unavailable. Please try again”.) Whilst also logging errors for the restaurant's technical teams to review and resolve. Retry mechanisms will assist the user in resolving temporary issues such as network failures, in order to prevent minor issues from disrupting service.
+
+Data Consistency: Using ACID-compliant transactions, the system will assure updates are simultaneously updated and reflected across all devices, across all restaurants. This will ensure that possibilities of different devices showing a table to be available while  another shows it as occupied. This would result in conflicts between bookings, and result in an effect in customer service, which is a concern specifically mentioned in the case study where there is a need for a seamless integration within the system.
+
+
+
+4. Scalability :
+
+Vertical Scalability: The system will support the addition of new features. For example, an expanded table management tool, which is integrated with  external booking systems. A real time example would be booking systems such as Dojo, which has direct access to table layouts, and based on customer bookings allocates customers a table, and at the same time provides customers with alternative times if table/time isn't available. Therefore, by upgrading the server capacity when necessary, the system will have the ability to handle growing restaurant chains without re-architecting the entirety of the infrastructure, aligning with the multi-tenant SaaS structure described in the case study. 
+
+
+
+
+
+
+
+
+Horizontal Scalability: By making use of microservices architecture, the system has the ability to scale individual services (such as booking management or table updates) Which then allows the system to handle an increase of the number of restaurants, as well as the increase of restaurant staff. Therefore, resulting in the system distributing traffic across several more servers, ensuring that performance remains consistent regardless of the load received.
+
+
+Geographical Distribution: The system will 
+
+
+
+
+
+
+
+
+
+
+
+(d) CloudTables-Operation: a desktop computer system for system operators to perform operations across restaurants. 
+
+Task 2:
+
+Security and privacy:
+
+System operators would have access to sensitive user information across multiple restaurants which means its important for this data to be secure. To protect this data, encryption should be used on both data at rest and data in transit, this way any data intercepted would be rendered unreadable. For data at rest, the AES-256 encryption algorithm can be used and for data in transit, protocols such as TLS or HTTPS can be used.
+
+Strict access control should be used in order to protect data and operational controls. This can be done by implementing role based access control, limiting operators access to only what i deemed necessary for their job. MFA should also be used to further reduce the risk of unauthorized access especially for operators who work with sensitive data. This can be done by requiring the employee to present some sort of identification or biometric information to validate their authorization for a certain operation. All operator actions should also be recorded and stored to ensure no one is taking advantage of their privilege and to solve any security incidents.
+
+Customer data in the operation systems must comply with the correct data regulations. Policies must be put in place to specify how long the data should be stored on the system and when it should be deleted securely. Only necessary customer information should be stored in the system, everything else should be deleted.
+
+Performance:
+
+
+System operators need access to real time information as they have to generate reports and check on different restaurants statuses which requires efficient data processing. A good way to do this is by implementing caching and database indexing so that during rush hours and weekends where the restaurant is very busy, the response time can still be quick. Another way to speed up data loading time is to use optimised SQL queires espcially for the data that is most accessed.
+
+System operators should have real time account management, this means they should be able to access and manage different restaurant accounts dynamically and have updates confirming that their actions have been processed correctly. This can be through realtime notifications displaying the change the action caused such as activating or deactivating a restaurant account. Efficient and well created APIs should be used to allow system operators to access different restaurant accounts and modify them so that information is quickly available to customers.
+
+Resource management is extremely important during peak restaurant times as operators have to perform data heavy tasks while there is already high traffic. This can be done through dynamic resource scaling, using cloud resouces which automatically scale depending on the demand meaning system operators wont experience slow system processing in peak hours.
+
+
+Reliability:
+
+The operation system needs to be highly available at all times and especially during periods of high traffic, in order for system operators not to be slowed down and able to keep up at any time. This can be done by using load balancing, this way the traffic is distributed across different servers to prevent any single server from being overwhelmed. Load balancers also monitor the server health and automatically fail over to a backup server if anything goes wrong.
+
+The data should be consistent across all systems and operator interfaces. The use of DDS(distrubuted data synchronization) ensures data synchronization across multiple systems so that any updates such as bookings or customer details are reflected immediately on any operator interface.
+
+Effective recovery plans and regular backups would help system operators maintain data integrity. All customer, restaurant and operation data should be backed up daily to avoid any unwanted data loss.
+
+There should also be automated consistency checks across all operator and restaurant accounts in order to detect any mistakes or synchronization quickly. These checks would verify the integrity of the data and if possible fix them automatically or alert a system operator to prevent any operational issues.
+
+
+
+Scalability:
+
+
+The system can use elastic cloud infrastructure, this would allow the system to automatically change the amount of resources available based on the current state of traffic. This would mean during times of high traffic and peak restaurant hours, the system would increase the amount of resources available to match the need, then scale down automatically when traffic goes down. This would ensure that the operations system stays consistent and responsive at all times.
+
+The use of microservice architecture would also benefit the scalability of the system as it splits up the system into a group of independent services that communicate with each other. This would allow any additions or modifications to be done independently and based on what the system needs. This would also help in the deployment of new services without the need of redeploying the whole system again.
+
+Another way to increase the scalabilty of the operations system is through sharding, this is when a large database would be split into multiple smaller databases which are easier to manage and scale. This would be used to avoid the database getting too large which would cause the response time to be longer as all requests are made to one database. As the requests would be split over different smaller databases this would ensure the system would still have good response times even when many actions are being performed.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
