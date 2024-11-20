@@ -1,0 +1,124 @@
+Week 1 Meeting
+Date: Tuesday, 24 September 2024
+Time: 17:00 PM
+Location: Library Meeting Room 2nd Floor
+Attendees:
+Laith Yaser (CloudTables-Customer)
+Salah Samara (CloudTables-Service)
+Hussein (CloudTables-Manager)
+Osama (CloudTables-Operation)
+Agenda:
+Introduction and team formation.
+Discuss coursework structure and deliverables.
+Division of tasks among team members.
+Meeting Minutes:
+The team members introduced themselves and agreed to meet every other Tuesday.
+Task assignments were finalised:
+Laith Yaser: CloudTables-Customer subsystem.
+Salah Samara: CloudTables-Service subsystem.
+Hussein: CloudTables-Manager subsystem.
+Osama: CloudTables-Operation subsystem.
+Team collaboration tools (GitHub) were set up.
+Next steps:
+Members will begin analysing the case study and requirements in preparation for Task 2.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Week 3 Meeting
+Date: Tuesday, 8 October 2024
+Time: 17:00 PM
+Location: Library Meeting Room 2nd Floor
+Attendees:
+Laith Yaser (CloudTables-Customer)
+Salah Samara (CloudTables-Service)
+Hussein (CloudTables-Manager)
+Osama (CloudTables-Operation)
+Agenda:
+Progress update on initial research.
+Plan and start Task 2.
+Set deadlines for Task 2.
+Meeting Minutes:
+Each member shared their understanding of the subsystem requirements.
+Members agreed to focus on defining quality attributes (security, performance, reliability, scalability) for Task 2.
+Deadline for completing Task 2: 22 October 2024 (next meeting).
+Members will prepare drafts of their quality requirements and bring them for review in the next meeting.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Week 5 Meeting
+Date: Tuesday, 22 October 2024
+Time: 17:00 PM
+Location: Library Meeting Room 2nd Floor
+Attendees:
+Laith Yaser (CloudTables-Customer)
+Salah Samara (CloudTables-Service)
+Hussein (CloudTables-Manager)
+Osama (CloudTables-Operation)
+Agenda:
+Review Task 2 quality requirements for all subsystems.
+Begin Task 3 (Use Case and Activity Diagrams).
+Plan the next steps.
+Meeting Minutes:
+Task 2 drafts were reviewed. Members cross-checked each other’s work to ensure alignment and consistency.
+Members started working on Task 3:
+Each member agreed to develop a Use Case Diagram and an Activity Diagram for their subsystem.
+Members agreed to complete Task 3 by 5 November 2024 (next meeting).
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Week 7 Meeting
+Date: Tuesday, 5 November 2024
+Time: 17:00 PM
+Location: Library Meeting Room 2nd Floor
+Attendees:
+Laith Yaser (CloudTables-Customer)
+Salah Samara (CloudTables-Service)
+Hussein (CloudTables-Manager)
+Osama (CloudTables-Operation)
+Agenda:
+Review completed Task 3 diagrams.
+Begin Task 4a (Subsystem Architecture Design).
+Plan for Task 4b and Task 5.
+Meeting Minutes:
+Task 3 (Use Case and Activity Diagrams) was reviewed and finalised.
+Members began Task 4a:
+Agreed to focus on architectural design, specifying microservices, and preparing UML component diagrams.
+Set the deadline for completing Task 4a: 19 November 2024 (next meeting).
+Members started discussing ideas for Task 5 (Detailed Design).
