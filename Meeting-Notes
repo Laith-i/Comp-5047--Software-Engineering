@@ -1,12 +1,13 @@
+Task 1:
 Week 1 Meeting
 Date: Tuesday, 24 September 2024
 Time: 17:00 PM
 Location: Library Meeting Room 2nd Floor
 Attendees:
-Laith Yaser (CloudTables-Customer)
-Salah Samara (CloudTables-Service)
-Hussein (CloudTables-Manager)
-Osama (CloudTables-Operation)
+Laith Yaser_19263206 (Team Leader) (CloudTables-Customer)
+Salah Samara_19257829 (CloudTables-Service)
+Hussein_19297386 (CloudTables-Manager)
+Osama_19269651 (CloudTables-Operation)
 Agenda:
 Introduction and team formation.
 Discuss coursework structure and deliverables.
@@ -40,10 +41,10 @@ Date: Tuesday, 8 October 2024
 Time: 17:00 PM
 Location: Library Meeting Room 2nd Floor
 Attendees:
-Laith Yaser (CloudTables-Customer)
-Salah Samara (CloudTables-Service)
-Hussein (CloudTables-Manager)
-Osama (CloudTables-Operation)
+Laith Yaser_19263206 (Team Leader) (CloudTables-Customer)
+Salah Samara_19257829 (CloudTables-Service)
+Hussein_19297386 (CloudTables-Manager)
+Osama_19269651 (CloudTables-Operation)
 Agenda:
 Progress update on initial research.
 Plan and start Task 2.
@@ -76,10 +77,10 @@ Date: Tuesday, 22 October 2024
 Time: 17:00 PM
 Location: Library Meeting Room 2nd Floor
 Attendees:
-Laith Yaser (CloudTables-Customer)
-Salah Samara (CloudTables-Service)
-Hussein (CloudTables-Manager)
-Osama (CloudTables-Operation)
+Laith Yaser_19263206 (Team Leader) (CloudTables-Customer)
+Salah Samara_19257829 (CloudTables-Service)
+Hussein_19297386 (CloudTables-Manager)
+Osama_19269651 (CloudTables-Operation)
 Agenda:
 Review Task 2 quality requirements for all subsystems.
 Begin Task 3 (Use Case and Activity Diagrams).
@@ -108,10 +109,10 @@ Date: Tuesday, 5 November 2024
 Time: 17:00 PM
 Location: Library Meeting Room 2nd Floor
 Attendees:
-Laith Yaser (CloudTables-Customer)
-Salah Samara (CloudTables-Service)
-Hussein (CloudTables-Manager)
-Osama (CloudTables-Operation)
+Laith Yaser_19263206 (Team Leader) (CloudTables-Customer)
+Salah Samara_19257829 (CloudTables-Service)
+Hussein_19297386 (CloudTables-Manager)
+Osama_19269651 (CloudTables-Operation)
 Agenda:
 Review completed Task 3 diagrams.
 Begin Task 4a (Subsystem Architecture Design).
@@ -122,3 +123,29 @@ Members began Task 4a:
 Agreed to focus on architectural design, specifying microservices, and preparing UML component diagrams.
 Set the deadline for completing Task 4a: 19 November 2024 (next meeting).
 Members started discussing ideas for Task 5 (Detailed Design).
+
+
+
+
+
+
+Week 9 Meeting
+Date: Tuesday, 19 November 2024
+Time: 17:00 PM
+Location: Library Meeting Room 2nd Floor
+Attendees:
+Laith Yaser_19263206 (Team Leader) (CloudTables-Customer)
+Salah Samara_19257829 (CloudTables-Service)
+Hussein_19297386 (CloudTables-Manager)
+Osama_19269651 (CloudTables-Operation)
+Agenda:
+Review completed Task 4a and Task 4b progress.
+Begin Task 5 (Detailed Design).
+Set deadlines for Task 5.
+Meeting Minutes:
+Task 4a (Subsystem Architecture Design) was reviewed, and members confirmed completion of microservices architectural diagrams and textual documentation.
+Task 4b (Whole System Architecture) was collaboratively reviewed and finalized, with all subsystems integrated into a unified design.
+Members agreed to start Task 5:
+Each member creates the detailed structural and behavioral design for a selected component in their subsystem.
+Structural design to include UML Class Diagrams, and behavioral design to include Sequence Diagrams.
+Deadline for completing Task 5: 3 December 2024 (Week 11 meeting, final review).
